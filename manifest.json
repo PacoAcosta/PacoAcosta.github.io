@@ -1,0 +1,59 @@
+{
+	"name": "Inventario Servicio Ingeniería Biomédica",
+	"short_name": "Inventario de Biomédica",
+	"description": "Aplicación para gestión de inventario del departamento de servicio de Ingeniería Biomédica",
+	"background_color": "#FFF",
+	"theme_color": "#213F90",
+	"orientation": "portrait",
+	"display": "standalone",
+	"start_url": "./index.html?utm_source=web_app_manifest",
+	"scope": "./",
+	"lang": "es-MX",
+	"icons": [ 
+		{
+			"src": "./imagenes/siys 1024.png",
+			"sizes": "1024x1024",
+			"type": "image/png"
+		},
+		{
+			"src": "./imagenes/siys 512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		},
+		{
+			"src": "./imagenes/siys 384.png",
+			"sizes": "384x384",
+			"type": "image/png"
+		},
+		{
+			"src": "./imagenes/siys 256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		},
+		{
+			"src": "./imagenes/siys 192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "./imagenes/siys 128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "./imagenes/siys 96.png",
+			"sizes": "96x96",
+			"type": "image/png"
+		},
+		{
+			"src": "./imagenes/siys 64.png",
+			"sizes": "64x64",
+			"type": "image/png"
+		},
+		{
+			"src": "./imagenes/siys 32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		}
+	]
+}

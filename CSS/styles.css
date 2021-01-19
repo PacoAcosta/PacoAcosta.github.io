@@ -1,0 +1,289 @@
+/* Estilos generales*/ *{
+	margin: 0px; /*Margen de la pag*/
+	padding: 0px; /*Espacio entre cada elemento*/
+	text-decoration: none; /*Para subrayar, tachar, etc el texto*/
+	font-family: 'Open Sans', Verdana; /*Tipo de letra*/
+}
+
+html, body{
+	overflow-x: hidden;
+}
+
+body{
+	background: white; /*Color de fondo de la pag */
+	/* font-size: 25px; Tamaño de la letra px=pixeles */
+}
+
+.clearfix{
+	clear: both;
+	float: none;
+}
+
+.container /*Para centrar textos*/ {
+	width: 85%; /*Ancho del bloque*/
+	margin: 0px auto; /*Centra un bloque*/
+}
+
+/* Cabecera */
+#main-header{
+	background: white;
+	height: 100px;
+	line-height: 85px;
+	border-bottom: 1px solid black;
+}
+#logo{
+	width: 63%; /*En porcentaje para que se adapte al tamaño de la ventana. Ej: tablet, cel, lap */
+	float: left;
+}
+#logo h1{
+	font-weight: bold;
+	font-size: 25px;
+	color: #213F90;
+}
+#Menú{
+	width: 304px; /*En pixeles es tamaño fijo, no como porcentaje*/
+	float: left;
+}
+#Menú ul li{
+	list-style: none;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#Menú ul li a{
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	margin-bottom: 200px;
+}
+#Menú ul li a:hover{
+	color: #213F90; /*a:hover es para cuando le pases el cursor arriba*/
+}
+
+/* Slider */
+#slider{
+	height: 300px;
+	background: #213F90;
+}
+#slider h2{
+	font-size: 40px;
+	text-align: center;
+	color: white;
+	line-height: 300px;
+	text-shadow: 0px 0px 6px black; /* Sombra cool para el texto */
+}
+
+/* Opciones */
+.subheader{
+	font-size: 34px;
+	color: #333;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	padding-bottom: 15px;
+	border-bottom: 2px solid #213F90;
+}
+.Option{
+	width: 33%;
+	text-align: center;
+	float: left;
+	/* margin-top: 20px;
+	margin-bottom: 20px; */
+}
+.Option img{
+	height: 70px; /* Tamaño de las imagenes */
+	margin-bottom: 20px;
+}
+.Option h3{
+	margin-bottom: 10px;
+	font-size: 30px;
+}
+.Option p{
+	color: #444;
+	font-size: 20px;
+}
+
+/* Pie de página */
+#footer{
+	background: #333;
+	padding-top: 5px;
+	padding-bottom: 40px;
+	margin-top: 30px;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+} 
+#footer .subheader {
+	color: white;
+	border-bottom: 2px solid #FAFDFE;
+}
+
+/* Condiciones para variar el formato de la pag dependiendo del tamaño */
+@media (max-width: 1249px){
+	.container{
+		width: 95%;
+	}
+	#slider{
+		overflow: hidden;
+		height: 150px
+	}
+	#slider h2{
+		font-size: 30px;
+		line-height: 0px;
+		margin-top: 70px;
+	}
+	
+}
+@media (max-width: 1085px){ 
+	#main-header{
+		height: 55px;
+		line-height: 55px;
+	} 
+	#logo{
+		width: 350px;
+		float: none;
+		margin: 0px auto;
+	}
+	#Menú{
+		float: none;
+		margin: 0px auto;
+	}
+}
+@media (max-width: 941px){
+	#logo{
+		width: 350px;
+		float: none;
+		margin: 0px auto;
+	} 
+	#slider h2{
+		font-size: 25px;
+		line-height: 33px;
+		margin-top: 60px;
+	}
+	#Menú{
+		float: none;
+		margin: 0px auto;
+	}
+	.Option h3{
+		height: auto;
+		margin-top: 35px;
+		margin-bottom: 30px;
+		font-size: 30px;
+		width: 70%;
+		margin: 0px auto;
+	}
+	.Option p{
+		margin-top: 30px;
+		margin-bottom: 30px;
+		font-size: 20px;
+		width: 70%;
+		margin: 0px auto;
+	}
+} 
+@media (max-width: 698px){
+	#slider h2{
+		font-size: 25px;
+		line-height: 33px;
+		margin-top: 50px;
+	}
+}
+@media (max-width: 650px){
+	.Option h3{
+		width: 70%; /* Ancho del texto */
+		float: none;		
+		margin: 0px auto; /* Con esto se centra */
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-size: 25px;
+	}
+	.Option p{
+		width: 70%;
+		float: none;		
+		margin: 0px auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-size: 18px;
+	}	
+}
+@media (max-width: 530px){
+	#slider h2{
+		font-size: 25px;
+		line-height: 33px;
+		margin-top: 43px;
+	}
+}
+@media (max-width: 493px){
+	.Option{
+		float: none;
+		margin: 0px auto;
+		width: 200px;
+		margin-top: 100px;
+		margin-bottom: 100px;
+		border: 5px solid black;
+	}
+	.Option img{
+		height: 60px; /* Tamaño de las imagenes */
+		margin-bottom: 0px;
+		margin-top: 20px;
+	}
+}
+@media (max-width: 380px){
+	#Menú{
+		width: 100%;
+		text-align: center;
+	}
+	#Menú ul li {
+		margin-left: 6%;
+		margin-right: 4%;
+	}
+}
+@media (max-width: 377px){
+	#slider h2{
+		font-size: 25px;
+		line-height: 33px;
+		margin-top: 30px;
+	}
+}
+@media (max-width: 364px){
+	#main-header{
+		height: auto
+	}
+	#Menú ul li {
+		float: none;
+	}
+}
+@media (max-width: 320px){
+	#logo h1{
+		width: auto;
+		font-size: 22px;
+		margin: 0px auto;
+	}
+	#slider h2{
+		font-size: 23px;
+		line-height: 33px;
+	}
+}
+@media (max-width: 287px){
+	#logo h1{
+		width: auto;
+		font-size: 19px;
+		margin: 0px auto;
+	}
+	#slider h2{
+		font-size: 18px;
+		text-align: center;	
+		margin-top: 40px;
+	}
+	/* #Menú{
+		margin-top: 10px;
+		margin-bottom: 30px;
+	} */
+}
+@media (max-width: 287px){
+	#slider h2{
+		font-size: 18px;
+		text-align: center;	
+		margin-top: 28px;
+	}
+}
+
